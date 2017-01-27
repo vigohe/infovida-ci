@@ -18,9 +18,9 @@ RUN echo "INSTALLING OPENJDK 8..." && \
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk/
 
-# GIT AND NODEJS
+# GIT - NODEJS - JQ
 RUN echo "INSTALLING GIT AND NODEJS..." \
-  && apk add --no-cache git bash openssh nodejs curl tar
+  && apk add --no-cache git bash openssh nodejs curl tar jq
 
 # MAVEN
 RUN echo "INSTALLING MAVEN..."
